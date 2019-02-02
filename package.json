@@ -1,0 +1,68 @@
+{
+  "name": "coverage-istanbul-loader",
+  "version": "0.0.1",
+  "description": "A Webpack loader that uses Istanbul to add code coverage instrumentation",
+  "keywords": [
+    "webpack-loader",
+    "webpack",
+    "loader",
+    "istanbul",
+    "coverage",
+    "code coverage",
+    "instrumentation",
+    "instrumenter",
+    "sourcemap",
+    "source-map",
+    "sourcemaps",
+    "source-maps"
+  ],
+  "author": {
+    "name": "James Messinger",
+    "url": "https://jamesmessinger.com"
+  },
+  "license": "(MIT OR CC-BY-NC-SA-4.0)",
+  "homepage": "https://jsdevtools.org/coverage-istanbul-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JS-DevTools/coverage-istanbul-loader.git"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "shx rm -rf .nyc_output coverage lib",
+    "lint": "npm run lint:typescript && npm run lint:javascript",
+    "lint:typescript": "tslint -p tsconfig.json",
+    "lint:javascript": "eslint test",
+    "build": "npm run clean && tsc",
+    "test": "mocha && npm run lint",
+    "coverage": "nyc --reporter=text --reporter=lcov mocha",
+    "upgrade": "npm-check -u",
+    "bump": "bump --prompt --tag --push --all",
+    "release": "npm run upgrade && npm run build && npm test && npm run bump"
+  },
+  "dependencies": {
+    "convert-source-map": "^1.6.0",
+    "istanbul-lib-instrument": "^3.0.0",
+    "loader-utils": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "@types/webpack": "^4.4.24",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.6.1",
+    "eslint-config-modular": "^6.0.0",
+    "mocha": "^5.2.0",
+    "npm-check": "^5.9.0",
+    "nyc": "^13.1.0",
+    "shx": "^0.3.2",
+    "tslint": "^5.12.0",
+    "tslint-modular": "^1.1.7",
+    "typescript": "^3.2.2",
+    "typescript-tslint-plugin": "^0.3.1",
+    "version-bump-prompt": "^4.2.1"
+  }
+}
