@@ -1,0 +1,14 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "coverage-istanbul-loader": "^0.1.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
