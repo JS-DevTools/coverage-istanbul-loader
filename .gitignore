@@ -36,6 +36,7 @@ pids
 node_modules
 
 # Test output
+/test/fixtures/dist
 /.nyc_output
 /coverage
 

@@ -35,7 +35,7 @@
     "clean": "shx rm -rf .nyc_output coverage lib",
     "lint": "npm run lint:typescript && npm run lint:javascript",
     "lint:typescript": "tslint -p tsconfig.json",
-    "lint:javascript": "eslint test",
+    "lint:javascript": "eslint test/specs test/utils",
     "build": "npm run clean && tsc",
     "test": "mocha && npm run lint",
     "coverage": "nyc --reporter=text --reporter=lcov mocha",
