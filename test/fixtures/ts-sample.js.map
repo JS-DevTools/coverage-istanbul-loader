@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ts-sample.js",
+  "sourceRoot": "",
+  "sources": [
+    "./ts-sample.ts"
+  ],
+  "names": [],
+  "mappings": ";;AAAA,MAAqB,GAAG;IACf,GAAG;QACR,OAAO,CAAC,CAAC,IAAI,CAAC;IAChB,CAAC;CACF;AAJD,sBAIC"
+}
