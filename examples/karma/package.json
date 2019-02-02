@@ -1,0 +1,21 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "karma start --single-run=true"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coverage-istanbul-loader": "^0.1.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^2.0.0",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-mocha": "^1.3.0",
+    "karma-verbose-reporter": "0.0.6",
+    "karma-webpack": "^3.0.5",
+    "webpack": "^4.29.0"
+  }
+}
