@@ -6,3 +6,12 @@ extends:
   - tslint-modular/best-practices
   - tslint-modular/style
   - tslint-modular/node
+
+rules:
+  # Webpack expects loaders to be the default export
+  no-default-export: false
+
+  # Allow importing type definitions from devDependencies
+  no-implicit-dependencies:
+    - true
+    - dev
