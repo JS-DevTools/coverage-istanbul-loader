@@ -44,7 +44,7 @@ Contributions, enhancements, and bug-fixes are welcome! [File an issue](https://
 To build/test the project locally on your computer:
 
 1. __Clone this repo__<br>
-`git clone hhttps://github.com/JS-DevTools/coverage-istanbul-loader.git`
+`git clone https://github.com/JS-DevTools/coverage-istanbul-loader.git`
 
 2. __Install dependencies__<br>
 `npm install`
