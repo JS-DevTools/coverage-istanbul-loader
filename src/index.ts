@@ -1,3 +1,4 @@
+// tslint:disable: no-default-export
 import convert from "convert-source-map";
 import { createInstrumenter, RawSourceMap } from "istanbul-lib-instrument";
 import loaderUtils from "loader-utils";
