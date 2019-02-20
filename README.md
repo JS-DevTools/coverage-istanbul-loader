@@ -1,4 +1,4 @@
-Istanbul Code Coverage Loader for Webpack
+Istanbul code coverage loader for Webpack
 ==============================================
 
 [![Cross-Platform Compatibility](https://jsdevtools.org/img/badges/os-badges.svg)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
@@ -56,9 +56,11 @@ To build/test the project locally on your computer:
 `npm test`
 
 
+
 License
 --------------------------
 coverage-istanbul-loader is 100% free and open-source, under the [MIT license](LICENSE). Use it however you want.
+
 
 
 Big Thanks To
