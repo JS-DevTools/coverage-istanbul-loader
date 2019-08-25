@@ -1,7 +1,7 @@
 Istanbul code coverage loader for Webpack
 ==============================================
 
-[![Cross-Platform Compatibility](https://jsdevtools.org/img/badges/os-badges.svg)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
 [![Build Status](https://api.travis-ci.com/JS-DevTools/coverage-istanbul-loader.svg?branch=master)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
 
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/coverage-istanbul-loader/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/coverage-istanbul-loader?branch=master)
@@ -67,6 +67,6 @@ Big Thanks To
 --------------------------
 Thanks to these awesome companies for their support of Open Source developers ❤
 
-[![Travis CI](https://jsdevtools.org/img/badges/travis-ci.svg)](https://travis-ci.com)
-[![SauceLabs](https://jsdevtools.org/img/badges/sauce-labs.svg)](https://saucelabs.com)
-[![Coveralls](https://jsdevtools.org/img/badges/coveralls.svg)](https://coveralls.io)
+[![Travis CI](https://jstools.dev/img/badges/travis-ci.svg)](https://travis-ci.com)
+[![SauceLabs](https://jstools.dev/img/badges/sauce-labs.svg)](https://saucelabs.com)
+[![Coveralls](https://jstools.dev/img/badges/coveralls.svg)](https://coveralls.io)

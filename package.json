@@ -21,7 +21,7 @@
     "url": "https://jamesmessinger.com"
   },
   "license": "MIT",
-  "homepage": "https://jsdevtools.org/coverage-istanbul-loader",
+  "homepage": "https://jstools.dev/coverage-istanbul-loader",
   "repository": {
     "type": "git",
     "url": "https://github.com/JS-DevTools/coverage-istanbul-loader.git"
