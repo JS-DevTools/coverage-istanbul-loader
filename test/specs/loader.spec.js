@@ -18,7 +18,7 @@ describe("Webpack tests", () => {
     const instrumentedSourceMap = JSON.parse(stats.compilation.assets["main.js.map"].source());
     expect(instrumentedSourceMap.sources).to.deep.equal([
       "webpack:///webpack/bootstrap",
-      "webpack:///./test/fixtures/esm-sample.js"
+      "webpack:///esm-sample.js"
     ]);
     expect(instrumentedSourceMap.sourcesContent[1]).to.equal(
       "export default class Foo {\n  bar () {\n    return !!this;\n  }\n};\n"
