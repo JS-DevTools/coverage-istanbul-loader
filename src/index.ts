@@ -3,7 +3,7 @@ import convert from "convert-source-map";
 import { createInstrumenter, RawSourceMap } from "istanbul-lib-instrument";
 import loaderUtils from "loader-utils";
 import mergeSourceMap from "merge-source-map";
-import nodePath from "path";
+import path from "path";
 import validateOptions from "schema-utils";
 import { loader } from "webpack";
 import optionsSchema from "./options-schema.json";
@@ -23,7 +23,7 @@ export default function(this: loader.LoaderContext, source: string, sourceMap?: 
   if (!sourceMap) {
     // Check for an inline source map
     const inlineSourceMap = convert.fromSource(source)
-      || convert.fromMapFileSource(source, nodePath.dirname(this.resourcePath));
+      || convert.fromMapFileSource(source, path.dirname(this.resourcePath));
 
     if (inlineSourceMap) {
       // Use the inline source map
