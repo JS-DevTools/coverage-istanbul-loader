@@ -1,8 +1,8 @@
 Istanbul code coverage loader for Webpack
 ==============================================
 
-[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
-[![Build Status](https://api.travis-ci.com/JS-DevTools/coverage-istanbul-loader.svg?branch=master)](https://travis-ci.com/JS-DevTools/coverage-istanbul-loader)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/blob/master/.github/workflows/CI-CD.yaml)
+[![Build Status](https://github.com/JS-DevTools/coverage-istanbul-loader/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/blob/master/.github/workflows/CI-CD.yaml)
 
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/coverage-istanbul-loader/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/coverage-istanbul-loader?branch=master)
 [![Dependencies](https://david-dm.org/JS-DevTools/coverage-istanbul-loader.svg)](https://david-dm.org/JS-DevTools/coverage-istanbul-loader)
