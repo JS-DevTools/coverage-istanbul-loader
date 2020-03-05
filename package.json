@@ -1,5 +1,5 @@
 {
-  "name": "coverage-istanbul-loader",
+  "name": "@jsdevtools/coverage-istanbul-loader",
   "version": "2.0.3",
   "description": "A Webpack loader that uses Istanbul to add code coverage instrumentation",
   "keywords": [

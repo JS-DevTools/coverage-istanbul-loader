@@ -7,7 +7,7 @@ module.exports = {
       {
         test: /\.js/,
         exclude: /node_modules/,
-        use: "coverage-istanbul-loader"
+        use: "@jsdevtools/coverage-istanbul-loader"
       }
     ]
   }

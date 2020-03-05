@@ -8,7 +8,7 @@ module.exports = {
         test: /\.js/,
         exclude: /node_modules/,
         use: {
-          loader: "coverage-istanbul-loader",
+          loader: "@jsdevtools/coverage-istanbul-loader",
           options: {
             compact: true
           }

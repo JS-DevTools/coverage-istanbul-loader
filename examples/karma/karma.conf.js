@@ -15,7 +15,7 @@ module.exports = (karma) => karma.set({
           test: /\.js/,
           include: /src/,
           exclude: /node_modules|\.spec\.js$/,
-          use: "coverage-istanbul-loader"
+          use: "@jsdevtools/coverage-istanbul-loader"
         }
       ]
     },

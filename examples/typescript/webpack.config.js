@@ -11,7 +11,7 @@ module.exports = {
         test: /\.ts/,
         exclude: /node_modules/,
         use: [
-          "coverage-istanbul-loader",
+          "@jsdevtools/coverage-istanbul-loader",
           "ts-loader"
         ]
       }

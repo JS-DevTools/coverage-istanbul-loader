@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "coverage-istanbul-loader": "^0.1.0",
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.1",
     "webpack": "^4.29.0",
