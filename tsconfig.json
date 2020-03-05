@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "esModuleInterop": true,    // This is necessary due to a type definition bug in "schema-utils"
     "resolveJsonModule": true,
     "lib": [
       "esnext",

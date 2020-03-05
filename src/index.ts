@@ -1,12 +1,12 @@
 // tslint:disable: no-default-export
-import convert from "convert-source-map";
+import * as convert from "convert-source-map";
 import { createInstrumenter, RawSourceMap } from "istanbul-lib-instrument";
-import loaderUtils from "loader-utils";
+import * as loaderUtils from "loader-utils";
 import mergeSourceMap from "merge-source-map";
-import path from "path";
+import * as path from "path";
 import validateOptions from "schema-utils";
 import { loader } from "webpack";
-import optionsSchema from "./options-schema.json";
+import * as optionsSchema from "./options-schema.json";
 import { defaultOptions, Options } from "./options.js";
 
 /**
