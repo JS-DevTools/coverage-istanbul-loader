@@ -5,8 +5,8 @@
 root: true
 
 extends:
-  - modular/best-practices
-  - modular/style
-  - modular/node
-  - modular/es6
-  - modular/test
+  - "@jsdevtools/modular/best-practices"
+  - "@jsdevtools/modular/style"
+  - "@jsdevtools/modular/node"
+  - "@jsdevtools/modular/es6"
+  - "@jsdevtools/modular/test"
