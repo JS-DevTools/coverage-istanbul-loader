@@ -35,6 +35,10 @@ pids
 # Dependencies
 node_modules
 
+# Examples
+/examples/*/dist
+/examples/*/coverage
+
 # Test output
 /test/fixtures/dist
 /.nyc_output
