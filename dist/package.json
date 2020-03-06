@@ -1,0 +1,41 @@
+{
+  "name": "coverage-istanbul-loader",
+  "version": "X.X.X",
+  "description": "A Webpack loader that uses Istanbul to add code coverage instrumentation",
+  "keywords": [
+    "webpack-loader",
+    "webpack",
+    "loader",
+    "istanbul",
+    "coverage",
+    "code coverage",
+    "instrumentation",
+    "instrumenter",
+    "sourcemap",
+    "source-map",
+    "sourcemaps",
+    "source-maps"
+  ],
+  "author": {
+    "name": "James Messinger",
+    "url": "https://jamesmessinger.com"
+  },
+  "license": "MIT",
+  "homepage": "https://jstools.dev/coverage-istanbul-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JS-DevTools/coverage-istanbul-loader.git"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@jsdevtools/coverage-istanbul-loader": "X.X.X"
+  }
+}
