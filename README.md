@@ -7,8 +7,9 @@ Istanbul code coverage loader for Webpack
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/coverage-istanbul-loader/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/coverage-istanbul-loader?branch=master)
 [![Dependencies](https://david-dm.org/JS-DevTools/coverage-istanbul-loader.svg)](https://david-dm.org/JS-DevTools/coverage-istanbul-loader)
 
-[![npm](https://img.shields.io/npm/v/@jsdevtools/coverage-istanbul-loader.svg?maxAge=43200)](https://www.npmjs.com/package/@jsdevtools/coverage-istanbul-loader)
-[![License](https://img.shields.io/npm/l/@jsdevtools/coverage-istanbul-loader.svg?maxAge=2592000)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@jsdevtools/coverage-istanbul-loader.svg)](https://www.npmjs.com/package/@jsdevtools/coverage-istanbul-loader)
+[![License](https://img.shields.io/npm/l/@jsdevtools/coverage-istanbul-loader.svg)](LICENSE)
+[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/XXXXXXXXXXXXXXXXXXXXXXXXX)
 
 
 
