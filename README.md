@@ -9,7 +9,7 @@ Istanbul code coverage loader for Webpack
 
 [![npm](https://img.shields.io/npm/v/@jsdevtools/coverage-istanbul-loader.svg)](https://www.npmjs.com/package/@jsdevtools/coverage-istanbul-loader)
 [![License](https://img.shields.io/npm/l/@jsdevtools/coverage-istanbul-loader.svg)](LICENSE)
-[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/XXXXXXXXXXXXXXXXXXXXXXXXX)
+[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/coverage-istanbul-loader)
 
 
 
