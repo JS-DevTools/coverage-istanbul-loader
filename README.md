@@ -1,8 +1,8 @@
 Istanbul code coverage loader for Webpack
 ==============================================
 
-[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/blob/master/.github/workflows/CI-CD.yaml)
-[![Build Status](https://github.com/JS-DevTools/coverage-istanbul-loader/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/blob/master/.github/workflows/CI-CD.yaml)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/actions)
+[![Build Status](https://github.com/JS-DevTools/coverage-istanbul-loader/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/coverage-istanbul-loader/actions)
 
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/coverage-istanbul-loader/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/coverage-istanbul-loader?branch=master)
 [![Dependencies](https://david-dm.org/JS-DevTools/coverage-istanbul-loader.svg)](https://david-dm.org/JS-DevTools/coverage-istanbul-loader)
@@ -39,7 +39,7 @@ See [the examples folder](examples) for usage examples for various use cases.
 
 Contributing
 --------------------------
-Contributions, enhancements, and bug-fixes are welcome! [File an issue](https://github.com/JS-DevTools/coverage-istanbul-loader/issues) on GitHub and [submit a pull request](https://github.com/JS-DevTools/coverage-istanbul-loader/pulls).
+Contributions, enhancements, and bug-fixes are welcome! [Open an issue](https://github.com/JS-DevTools/coverage-istanbul-loader/issues) on GitHub and [submit a pull request](https://github.com/JS-DevTools/coverage-istanbul-loader/pulls).
 
 #### Building/Testing
 To build/test the project locally on your computer:
