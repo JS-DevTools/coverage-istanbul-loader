@@ -20,14 +20,23 @@ export default function(this: loader.LoaderContext, source: string, sourceMap?: 
   options = Object.assign(defaultOptions, options);
   validateOptions(optionsSchema, options, "Coverage Istanbul Loader");
 
-  if (!sourceMap) {
-    // Check for an inline source map
-    const inlineSourceMap = convert.fromSource(source)
-      || convert.fromMapFileSource(source, path.dirname(this.resourcePath));
+  try {
+    if (!sourceMap) {
+      // Check for an inline source map
+      const inlineSourceMap = convert.fromSource(source)
+        || convert.fromMapFileSource(source, path.dirname(this.resourcePath));
 
-    if (inlineSourceMap) {
-      // Use the inline source map
-      sourceMap = inlineSourceMap.sourcemap as RawSourceMap;
+      if (inlineSourceMap) {
+        // Use the inline source map
+        sourceMap = inlineSourceMap.sourcemap as RawSourceMap;
+      }
+    }
+  } catch (e) {
+    // Exception is thrown by fromMapFileSource when there is no source map file
+    if (e instanceof Error && e.message.includes("An error occurred while trying to read the map file at")) {
+      this.emitWarning(e);
+    } else {
+      throw e;
     }
   }
 
