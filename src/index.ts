@@ -20,24 +20,9 @@ export default function(this: loader.LoaderContext, source: string, sourceMap?: 
   options = Object.assign(defaultOptions, options);
   validateOptions(optionsSchema, options, "Coverage Istanbul Loader");
 
-  try {
-    if (!sourceMap) {
-      // Check for an inline source map
-      const inlineSourceMap = convert.fromSource(source)
-        || convert.fromMapFileSource(source, path.dirname(this.resourcePath));
-
-      if (inlineSourceMap) {
-        // Use the inline source map
-        sourceMap = inlineSourceMap.sourcemap as RawSourceMap;
-      }
-    }
-  } catch (e) {
-    // Exception is thrown by fromMapFileSource when there is no source map file
-    if (e instanceof Error && e.message.includes("An error occurred while trying to read the map file at")) {
-      this.emitWarning(e);
-    } else {
-      throw e;
-    }
+  // If there's no external sourceMap file, then check for an inline sourceMap
+  if (!sourceMap) {
+    sourceMap = getInlineSourceMap.call(this, source);
   }
 
   // Instrument the code
@@ -54,5 +39,30 @@ export default function(this: loader.LoaderContext, source: string, sourceMap?: 
     }
 
     this.callback(error, instrumentedSource, instrumentedSourceMap);
+  }
+}
+
+/**
+ * If the source code has an inline base64-encoded source map,
+ * then this function decodes it, parses it, and returns it.
+ */
+function getInlineSourceMap(this: loader.LoaderContext, source: string): RawSourceMap | undefined {
+  try {
+    // Check for an inline source map
+    const inlineSourceMap = convert.fromSource(source)
+      || convert.fromMapFileSource(source, path.dirname(this.resourcePath));
+
+    if (inlineSourceMap) {
+      // Use the inline source map
+      return inlineSourceMap.sourcemap as RawSourceMap;
+    }
+  }
+  catch (e) {
+    // Exception is thrown by fromMapFileSource when there is no source map file
+    if (e instanceof Error && e.message.includes("An error occurred while trying to read the map file at")) {
+      this.emitWarning(e);
+    } else {
+      throw e;
+    }
   }
 }
