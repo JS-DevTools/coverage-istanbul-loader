@@ -1,4 +1,3 @@
-// tslint:disable: no-default-export
 import * as convert from "convert-source-map";
 import { createInstrumenter, RawSourceMap } from "istanbul-lib-instrument";
 import * as loaderUtils from "loader-utils";
@@ -61,7 +60,8 @@ function getInlineSourceMap(this: loader.LoaderContext, source: string): RawSour
     // Exception is thrown by fromMapFileSource when there is no source map file
     if (e instanceof Error && e.message.includes("An error occurred while trying to read the map file at")) {
       this.emitWarning(e);
-    } else {
+    }
+    else {
       throw e;
     }
   }
