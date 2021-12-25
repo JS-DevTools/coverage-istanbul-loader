@@ -26,7 +26,13 @@ export default function(this: loader.LoaderContext, source: string, sourceMap?: 
 
   // Instrument the code
   let instrumenter = createInstrumenter(options);
-  instrumenter.instrument(source, this.resourcePath, done.bind(this), sourceMap);
+  if (sourceMap !== undefined) {
+    const { ...sourceMapPlainObject } = sourceMap;
+    instrumenter.instrument(source, this.resourcePath, done.bind(this), sourceMapPlainObject);
+  }
+  else {
+    instrumenter.instrument(source, this.resourcePath, done.bind(this), undefined);
+  }
 
   function done(this: loader.LoaderContext, error: Error | null, instrumentedSource: string) {
     // Get the source map for the instrumented code
